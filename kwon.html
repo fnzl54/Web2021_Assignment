@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1">
+    <title>Chanyoung Kwon introduce</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.page2').fadeOut('fast');
+            $('.page3').fadeOut('fast');
+         })
+
+        $(document).ready(function () {
+            $('.pageNum1').click(function () {
+                $('.page1').fadeIn('fast');
+                $('.page2').fadeOut('fast');
+                $('.page3').fadeOut('fast');
+            });
+        });
+        $(document).ready(function () {
+            $('.pageNum2').click(function () {
+                $('.page2').fadeIn('fast');
+                $('.page1').fadeOut('fast');
+                $('.page3').fadeOut('fast');
+            });
+        });
+        $(document).ready(function () {
+            $('.pageNum3').click(function () {
+                $('.page3').fadeIn('fast');
+                $('.page2').fadeOut('fast');
+                $('.page1').fadeOut('fast');
+            });
+        });
+
+    </script>
+    <style>
+        .name {
+            text-shadow: 1px 1px 1px black;
+            padding-left: 10px;
+        }
+
+        .date {
+            padding-left: 10px; 
+        }
+       .myphoto {
+        border: 10px medium black;
+        padding: 5px 10px 85px 5px;
+        float: left;
+       }
+    
+       .navi {
+           position: fixed; left: 0; top: 0; right: 0; height: 150px;
+           background-color: white;
+       }
+
+       .page1 {
+           margin-top: 150px;
+       }
+
+       .page2 {
+           margin-top: 150px;
+       }
+
+       .page3 {
+           margin-top: 150px;
+       }
+
+       [class^=pageNum] {
+           float: right;
+           padding-inline-end: 5px;
+           border: 0px;
+           background-color: rgba(128, 128, 128, 0.829);
+           line-height: 18px;
+           font-size: 18px;
+       }
+
+       .pageNum1:hover {
+           line-height: 25px;
+           font-size: 25px;
+           background: rgb(135, 235, 143);
+       }
+
+       .pageNum2:hover {
+            line-height: 25px;
+           font-size: 25px;
+           background: skyblue;
+       }
+
+       .pageNum3:hover {
+            line-height: 25px;
+           font-size: 25px;
+           background: rgb(235, 135, 218);
+       }
+
+       .pageNA {float: right;}
+
+       @media screen and (max-width: 767px) {
+            .info {float: left;}
+            .myphoto {padding: 5px 5px 5px 5px}
+            .pageNA {float: none;}   
+       }
+
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <h1 class="name">CHANYOUNG KWON</h1>
+        <p class="date">작성 날짜 : 2021.05.30</p>
+        <div class="pageNA">
+            <div><button class="pageNum3">버킷리스트</button></div>
+            <div><button class="pageNum2">꿈</button></div>
+            <div><button class="pageNum1">HOME</button></div>
+        </div>
+        <hr>
+    </div>
+    <div class="page1">
+
+        <div class="myphoto">
+            <img src = "https://i.postimg.cc/d1RFLpy5/IMG-4399.jpg"  width=280px  height=350ox>
+        </div>
+
+
+       <div class="info">
+       <h2>나를 사물로 표현 한다면?</h2>
+       <p>저는 모래라고 생각합니다. 모래는 물로 합쳐진 상태에서는 완전 뭉쳐져서 잘 부셔지지 않지만 마른 상태에서는 쉽게 부셔집니다. 저는 물이 주변 사람으로 주변 사람으로부터 기운을 얻고 제 자신을 더 단단하게 유지하려고 노력하기 때문입니다.</p>
+        <h2>취미</h2>
+        <p>노래를 듣는 것을 좋아하며 특히 기분이 좋지 않을 때 방에서 가만히 노래만 듣고 있으면 기분이 괜찮아지며 자주 듣는 노래는 아이유의 빈컵, 규현의 하루종일이 있습니다.<br>전자기기를 좋아하며 좋아하는 기업을 Apple입니다. 신제품 발표와 WWDC의 발표를 실시간으로 보고 있습니다.</p>
+        <h2>인적사항</h2>
+        <p>태어난 날과 장소 : 2001.09.24, 경기도 광명시<br>가족 : 어머니, 아버지, 강아지</p>
+        <h2>이메일 주소</h2>
+        <p>rnjscksdud1@naver.com</p>
+       </div>
+
+    </div>
+
+
+    <div class="page2">
+        <h2>컴퓨터공학과에 진학이유</h2>
+        <p>어릴적부터 전자기기를 만지는 것을 좋아하며 내가 이 기기를 구동하는 앱, os를 만들면 어떨까라는 생각을 많이 했습니다. 처음에는 안에 os보다는 하드웨어에 관심이 많았지만 일반 사용자가 사용하는 단계에 오려면 중간에 소프트웨어가 무조건 필요하다는 셍각을 해서 컴퓨터 공학과에 진학을 하게 되었습니다. 1학년때 자유전공에 있다가 2학년에 넘어오면서 처음에는 힘들었지만 지금은 이해하기 위해 열심히 노력하고 있습니다.</p>
+        <h2>개발 목표</h2>
+        <p>우리는 현재 스마트폰 이외에도 많은 전자 기기와 함께 살아가고 있습니다. 따라서 모든 기기들이 조화롭게 구동이 되면서 일반 사용자들이 아무런 불편함없이 이러한 기능을 사용하게 만드는 것 입니다. 개인이 사용하는 모든 기기가 하나처럼 유기적으로 만드는 환경을 구현하고 싶습니다.</p>
+        <h2>2021방학중 목표</h2>
+        <p>많은 것을 경험해보고 싶어서 다양한 대외할동을 신청할 예정이며 이번 1학기때 배운 프로그래밍 언어를 지속적으로 발전시켜 사용할때 불편하지 않게 더 익숙하게 만든는것이 목표입니다.</p>
+    </div>
+
+    <div class="page3">
+        <img src = "https://i.postimg.cc/qMXK45Yv/IMG-3281.jpg"  width=350px  height=350ox>
+        <i>2017.12.20 Hong Kong</i>
+        <div class="info"></div>
+            <h2>좋아하는 것</h2>
+            <p>여행 가는 것을 매우 좋아하면 특히 여행중 이동을 하면서 익숙하지 않고 새로운 풍경을 보는 것을 좋아합니다. 위의 사진은 제가 여행을 가서 찍은 사진 중에 제일 마음에 드는 사진입니다</p>
+            <h2>버킷 리스트 </h2>
+            <ol>
+                <li>행글라이더 : 하늘에서 밑을 보면서 날아보고 싶습니다.</li>
+                <li>WWDC에 참석하기 : 코로나 이후 다시 대면으로 개최한다면 제가 관심있어하는 wwdc에 직접 가서 보고 싶습니다.</li>
+                <li>대륙 별로 일주하기 : 각 대륙을 한달씩 살아보면서 그 대륙 전체의 특징을 직접 몸으로 느껴보고 싶습니다.</li>
+                <li>워킹홀리데이 준비하기 : 새로운 나라에 가서 그 나라의 자세한 것까지 경험하고 일을 하면서 한국어 말고 제2외국어를 유창하게 구사하고 싶습니다.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
